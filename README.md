@@ -41,7 +41,8 @@ truffle version
 cd app
 # install packages
 npm install --save  openzeppelin-solidity@2.3
-npm install --save  truffle-hdwallet-provider@1.0.17
+**npm install --save  truffle-hdwallet-provider@1.0.17**
+npm install --save @truffle/hdwallet-provider@2.1.15
 npm install webpack-dev-server -g
 npm install web3
 ```
@@ -93,7 +94,7 @@ When you will add a new Rinkeyby Test Network in your Metamask client, you will 
 
 | Network Name | New RPC URL | Chain ID |
 |---|---|---|
-|Private Network 1|`http://127.0.0.1:9545/`|1337 |
+|Private Network 1|`http://127.0.0.1:8545/`|1337 |
 
 The chain ID above can be fetched by:
 ```bash
@@ -136,3 +137,69 @@ compilers: {
 ---
 
 Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c51c4c0_project-5-starter-code/project-5-starter-code.zip)
+
+
+Deployed on Sepolia test network---------------------------------------------------------------------
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x5ed98bc68765a443da8b3c80afc20b0256c9c502bf2ae6285c622ca01e9bde67
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x997F1Aa215BA983bbe579E28884bC2dA346A2464
+   > block number:        4969342
+   > block timestamp:     1703707764
+   > account:             0x36553b793Fe7a75e75138510dF5dd71ddbd443d6
+   > balance:             0.998844808048267654
+   > gas used:            226587 (0x3751b)
+   > gas price:           5.098226958 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001155191951732346 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 4969343)
+   > confirmation number: 2 (block: 4969344)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.001155191951732346 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > transaction hash:    0xa706ce4c334bc9030a932a67796e8de6abda4e4acffb777d2f1efd3870bfb2c9
+   > Blocks: 1            Seconds: 17
+   > contract address:    0x5F9382e1926D16dDAC6051348906ecB68164a048
+   > block number:        4969346
+   > block timestamp:     1703707836
+   > account:             0x36553b793Fe7a75e75138510dF5dd71ddbd443d6
+   > balance:             0.986537485777632283
+   > gas used:            2269996 (0x22a32c)
+   > gas price:           5.320788409 gwei
+   > value sent:          0 ETH
+   > total cost:          0.012078168405276364 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 4969347)
+   > confirmation number: 2 (block: 4969348)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.012078168405276364 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.01323336035700871 ETH
+
+
+Token Created on Sepolia-------------------------------------------------------------------------------
+transaction hash -0x8ffbffb7ad8febebf778c287a27287996e8bc2ce98c1f8fccde99985ffc5693c
